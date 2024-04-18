@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Doctor.ListOfPatient">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Dates You Are Booking\nYou Can Cancel By Click On The Dates"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@color/blue_neon"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp">
+
+        <ListView
+            android:id="@+id/timetableListView"
+            android:layout_width="match_parent"
+            android:background="@drawable/backgroung22"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_homePatient"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/bt_round"/>
+
+
+</LinearLayout>

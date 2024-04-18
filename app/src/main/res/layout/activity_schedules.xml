@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".DoctorCalendar.Schedules">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:background="@color/blue_neon">
+            <TextView
+                android:id="@+id/userEmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Email: "
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/userFullNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/userEmailTextView"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Full Name: " />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelScheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:layout_marginTop="16dp"
+        android:text="Cancel Schedule"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/bt_round"/>
+
+    <ListView
+        android:background="@drawable/backgroung22"
+        android:id="@+id/timetableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelScheduleButton"
+        android:layout_marginTop="6dp"
+        android:choiceMode="multipleChoice">
+    </ListView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timetableListView"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bt_round"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Logout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bt_round"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Back" />
+
+</RelativeLayout>

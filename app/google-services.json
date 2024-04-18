@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "330663643018",
+    "firebase_url": "https://hmm-system-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hmm-system",
+    "storage_bucket": "hmm-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330663643018:android:da7e436d62638d6bcd6a73",
+        "android_client_info": {
+          "package_name": "com.example.doctor_hms_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIWpyqVDyi9qByNhz9gP2fZxbsj8EqZqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

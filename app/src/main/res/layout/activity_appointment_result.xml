@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Doctor.AppointmentResult">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appointment Result"
+        android:textSize="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/blue"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Information of Patient"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:text="Full Name:" />
+
+                <TextView
+                    android:id="@+id/tv_patient_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone Number:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_patient_mobilephone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:text="Appointment Time:" />
+
+                <TextView
+                    android:id="@+id/tv_appointment_time"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Insurance Type:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/ed_patient_insurance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter insurance type"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="The Result Of Appointment"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Doctor:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_doctor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_light"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_doctor_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_light"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reason for ME:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tv_Reason"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Seem like your patient does not giving any reason for medical examination"
+                    android:fontFamily="@font/poppins_light"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clinical ER:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/ed_clinical_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:hint="Clinical examination results"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Diagnosis"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/ed_diagnosis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Diagnosis"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Conclusion:"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/ed_conclusion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    android:hint="Conclusion"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Recommendation:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/ed_recommendation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Recommendation"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Directions follow"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/ed_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter note for your patient..."
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bt_round"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:text="Confirm" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bt_round"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

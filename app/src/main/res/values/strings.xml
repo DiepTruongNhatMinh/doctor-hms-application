@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Doctor_Application</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Password Confirm</string>
+    <string name="login">Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_confirmation">Password Confirmation</string>
+
+    //Headings
+    <string name="heading_one">Easy To Use</string>
+    <string name="heading_two">Instant Notifications</string>
+    <string name="heading_three">Everywhere EveryTime</string>
+    <string name="heading_fourth"></string>
+
+    //Description
+    <string name="desc_one">Welcome to NM Booking Appointment System</string>
+    <string name="desc_two"></string>
+    <string name="desc_three"></string>
+    <string name="desc_fourth"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="certificate">Certificate</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="mobile">Mobile</string>
+    <string name="specialist">Specialist</string>
+    <string name="profile">Profile</string>
+    <string name="medical_history">Medical History</string>
+
+
+</resources>
